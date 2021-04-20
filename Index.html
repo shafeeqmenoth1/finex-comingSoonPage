@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Coming Soon Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="/Style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><img src="/LOGO_COLOR1.png" alt=""></div>
+        <h1 class="coming-soon">Our website is <span><br/>Coming Soon</span></h1>
+     <!---
+        <div class="count">
+          <div class="countd">
+            <span id="days">00</span>
+            DAYS
+          </div>
+          <div class="countd">
+            <span id="hours">00</span>
+            HOURS
+          </div>
+          <div class="countd">
+            <span id="minutes">00</span>
+            MINUTES
+          </div>
+
+          <div class="countd">
+            <span id="seconds">00</span>
+            SECONDS
+          </div>
+        </div>
+        <button class="btn">Notify Me</button>
+      -->  
+      <div class="social">
+        <h2>To get update, Follow us</h2>
+        <div class="icons">
+          <a href="https://www.facebook.com/finexcorporateservices"><span class="fab fa-facebook-f"></span></a>
+        <a href="https://wa.me/971585932445"><span class="fab fa-whatsapp"></span></a>
+          <a href="https://www.instagram.com/finexdubai/"><span class="fab fa-instagram"></span></a>
+          <a href=""><span class="fab fa-linkedin-in"></span></a>
+        </div>
+      </div>
+    </div>
+
+
+<script type="text/javascript">
+
+  let count = new Date("april 24,2021 00:09:00").getTime();
+  let x = setInterval(function() {
+    let now = new Date().getTime();
+    let d = count - now;
+
+    let days = Math.floor(d/(1000*60*60*24));
+    let hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+    let minutes = Math.floor((d%(1000*60*60))/(1000*60));
+    let seconds = Math.floor((d%(1000*60))/1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if(d <= 0){
+      clearInterval(x);
+    }
+  },1000);
+</script>
+
+
+
+
+
+  </body>
+</html>

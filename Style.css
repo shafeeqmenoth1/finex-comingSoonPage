@@ -1,0 +1,93 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to bottom,#f1efef,#e2e2e2 100%);
+    font-family: "Montserret",sans-serif;
+}
+.logo{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.logo img{
+    width: 220px;
+}
+.container{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+.container h1{
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 0px;
+}
+.container h1 span{
+    font-size: 60px;
+}
+.icons{
+    margin: 15px;
+}
+.icons a{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  
+    padding: 12px;
+    line-height: 20px;
+    margin: 8px;
+    font-size: 24px;
+   
+   padding: 8px;
+    
+}
+.icons a span{
+    transition: all 0.3s ease;
+}
+.icons a span:hover{
+    color: #ffab1d;
+}
+.social h2{
+    margin: 25px 0;
+    font-size: 16px;
+}
+.count{
+    margin: 40px;
+}
+.countd{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid;
+    margin: 0 30px;
+    font-size: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.countd span{
+    display:block;
+    font-size: 26px;
+    margin-top: 14px;
+}
+span{
+    background-image: linear-gradient(to right,#ffab1d,#f8501c 100%);
+     color: transparent;
+     -webkit-background-clip: text;
+     background-clip: text;
+} 
+.btn{
+    width: 140px;
+    margin-top: 30px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,#33ccff,#00ff99 100%);
+}
